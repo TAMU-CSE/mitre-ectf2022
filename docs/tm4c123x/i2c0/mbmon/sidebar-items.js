@@ -1,0 +1,1 @@
+initSidebarItems({"type":[["R","Reader of register MBMON"],["SCL_R","Reader of field `SCL`"],["SDA_R","Reader of field `SDA`"]]});

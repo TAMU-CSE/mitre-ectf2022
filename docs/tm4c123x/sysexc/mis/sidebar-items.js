@@ -1,0 +1,1 @@
+initSidebarItems({"type":[["FPDZCMIS_R","Reader of field `FPDZCMIS`"],["FPIDCMIS_R","Reader of field `FPIDCMIS`"],["FPIOCMIS_R","Reader of field `FPIOCMIS`"],["FPIXCMIS_R","Reader of field `FPIXCMIS`"],["FPOFCMIS_R","Reader of field `FPOFCMIS`"],["FPUFCMIS_R","Reader of field `FPUFCMIS`"],["R","Reader of register MIS"]]});

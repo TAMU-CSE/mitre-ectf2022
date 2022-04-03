@@ -1,0 +1,1 @@
+initSidebarItems({"type":[["R","Reader of register CHIS"],["W","Writer for register CHIS"]]});

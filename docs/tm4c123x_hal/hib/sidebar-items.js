@@ -1,0 +1,1 @@
+initSidebarItems({"enum":[["Source","Which source to use for the HIB clock"]],"struct":[["Hib","A wrapper around the HIB (Hibernation) peripheral"]]});

@@ -1,0 +1,1 @@
+initSidebarItems({"enum":[["PowerState","Select whether the peripheral should be on or off"],["RunMode","Select in which mode the peripheral should be affected"]],"mod":[["chip_id","This module is all about identifying the physical chip we’re running on."]],"struct":[["Clocks","Frozen clock frequencies"]]});

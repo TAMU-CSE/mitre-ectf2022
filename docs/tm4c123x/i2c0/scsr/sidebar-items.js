@@ -1,0 +1,1 @@
+initSidebarItems({"type":[["DA_R","Reader of field `DA`"],["FBR_R","Reader of field `FBR`"],["OAR2SEL_R","Reader of field `OAR2SEL`"],["R","Reader of register SCSR"],["RREQ_R","Reader of field `RREQ`"],["TREQ_R","Reader of field `TREQ`"]]});

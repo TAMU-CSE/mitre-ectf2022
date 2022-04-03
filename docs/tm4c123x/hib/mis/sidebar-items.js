@@ -1,0 +1,1 @@
+initSidebarItems({"type":[["EXTW_R","Reader of field `EXTW`"],["LOWBAT_R","Reader of field `LOWBAT`"],["R","Reader of register MIS"],["RTCALT0_R","Reader of field `RTCALT0`"],["WC_R","Reader of field `WC`"]]});

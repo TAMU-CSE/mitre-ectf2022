@@ -1,0 +1,1 @@
+initSidebarItems({"struct":[["RTCSSC_W","Write proxy for field `RTCSSC`"],["RTCSSM_W","Write proxy for field `RTCSSM`"]],"type":[["R","Reader of register RTCSS"],["RTCSSC_R","Reader of field `RTCSSC`"],["RTCSSM_R","Reader of field `RTCSSM`"],["W","Writer for register RTCSS"]]});

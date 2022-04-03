@@ -1,0 +1,1 @@
+initSidebarItems({"type":[["EP1_R","Reader of field `EP1`"],["EP2_R","Reader of field `EP2`"],["EP3_R","Reader of field `EP3`"],["EP4_R","Reader of field `EP4`"],["EP5_R","Reader of field `EP5`"],["EP6_R","Reader of field `EP6`"],["EP7_R","Reader of field `EP7`"],["R","Reader of register RXIS"]]});

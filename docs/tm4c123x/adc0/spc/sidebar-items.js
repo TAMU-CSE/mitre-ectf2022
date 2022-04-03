@@ -1,0 +1,1 @@
+initSidebarItems({"enum":[["PHASE_A","Phase Difference"]],"struct":[["PHASE_W","Write proxy for field `PHASE`"]],"type":[["PHASE_R","Reader of field `PHASE`"],["R","Reader of register SPC"],["W","Writer for register SPC"]]});

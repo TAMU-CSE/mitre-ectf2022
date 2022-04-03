@@ -1,0 +1,1 @@
+initSidebarItems({"type":[["R","Reader of register DRRIS"],["RESUME_R","Reader of field `RESUME`"]]});

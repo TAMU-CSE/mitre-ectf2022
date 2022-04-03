@@ -1,0 +1,1 @@
+initSidebarItems({"struct":[["MAXLOAD_W","Write proxy for field `MAXLOAD`"]],"type":[["MAXLOAD_R","Reader of field `MAXLOAD`"],["R","Reader of register TXMAXP7"],["W","Writer for register TXMAXP7"]]});

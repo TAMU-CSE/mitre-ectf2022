@@ -1,0 +1,1 @@
+initSidebarItems({"struct":[["GPIO_W","Write proxy for field `GPIO`"]],"type":[["GPIO_R","Reader of field `GPIO`"],["R","Reader of register IM"],["W","Writer for register IM"]]});

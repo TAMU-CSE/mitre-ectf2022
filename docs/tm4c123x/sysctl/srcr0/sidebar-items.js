@@ -1,0 +1,1 @@
+initSidebarItems({"type":[["ADC0_R","Reader of field `ADC0`"],["ADC1_R","Reader of field `ADC1`"],["CAN0_R","Reader of field `CAN0`"],["CAN1_R","Reader of field `CAN1`"],["HIB_R","Reader of field `HIB`"],["PWM0_R","Reader of field `PWM0`"],["R","Reader of register SRCR0"],["WDT0_R","Reader of field `WDT0`"],["WDT1_R","Reader of field `WDT1`"]]});

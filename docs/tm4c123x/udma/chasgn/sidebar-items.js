@@ -1,0 +1,1 @@
+initSidebarItems({"enum":[["CHASGN_A","Channel [n] Assignment Select"]],"struct":[["CHASGN_W","Write proxy for field `CHASGN`"]],"type":[["CHASGN_R","Reader of field `CHASGN`"],["R","Reader of register CHASGN"],["W","Writer for register CHASGN"]]});

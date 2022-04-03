@@ -1,0 +1,1 @@
+initSidebarItems({"enum":[["RX_A","UART Receive Interrupt FIFO Level Select"],["TX_A","UART Transmit Interrupt FIFO Level Select"]],"struct":[["RX_W","Write proxy for field `RX`"],["TX_W","Write proxy for field `TX`"]],"type":[["R","Reader of register IFLS"],["RX_R","Reader of field `RX`"],["TX_R","Reader of field `TX`"],["W","Writer for register IFLS"]]});

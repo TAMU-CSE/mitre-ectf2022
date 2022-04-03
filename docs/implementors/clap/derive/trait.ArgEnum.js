@@ -1,0 +1,3 @@
+(function() {var implementors = {};
+implementors["readback"] = [{"text":"impl <a class=\"trait\" href=\"clap/derive/trait.ArgEnum.html\" title=\"trait clap::derive::ArgEnum\">ArgEnum</a> for <a class=\"enum\" href=\"readback/enum.Region.html\" title=\"enum readback::Region\">Region</a>","synthetic":false,"types":["readback::Region"]}];
+if (window.register_implementors) {window.register_implementors(implementors);} else {window.pending_implementors = implementors;}})()

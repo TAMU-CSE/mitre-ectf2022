@@ -1,0 +1,1 @@
+initSidebarItems({"enum":[["Error","A catch-all error type for all error states in the bootloader."]],"type":[["Result","Convenient alias for a [`Result`] parametrized by [`Error`]."]]});

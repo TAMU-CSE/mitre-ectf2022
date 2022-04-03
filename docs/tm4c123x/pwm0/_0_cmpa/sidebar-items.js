@@ -1,0 +1,1 @@
+initSidebarItems({"struct":[["CMPA_W","Write proxy for field `CMPA`"]],"type":[["CMPA_R","Reader of field `CMPA`"],["R","Reader of register _0_CMPA"],["W","Writer for register _0_CMPA"]]});

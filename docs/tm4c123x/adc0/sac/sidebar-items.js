@@ -1,0 +1,1 @@
+initSidebarItems({"enum":[["AVG_A","Hardware Averaging Control"]],"struct":[["AVG_W","Write proxy for field `AVG`"]],"type":[["AVG_R","Reader of field `AVG`"],["R","Reader of register SAC"],["W","Writer for register SAC"]]});

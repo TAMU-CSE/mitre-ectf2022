@@ -1,0 +1,1 @@
+initSidebarItems({"type":[["BOR0RIS_R","Reader of field `BOR0RIS`"],["BOR1RIS_R","Reader of field `BOR1RIS`"],["MOFRIS_R","Reader of field `MOFRIS`"],["MOSCPUPRIS_R","Reader of field `MOSCPUPRIS`"],["PLLLRIS_R","Reader of field `PLLLRIS`"],["R","Reader of register RIS"],["USBPLLLRIS_R","Reader of field `USBPLLLRIS`"],["VDDARIS_R","Reader of field `VDDARIS`"]]});

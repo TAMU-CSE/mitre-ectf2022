@@ -1,0 +1,1 @@
+initSidebarItems({"struct":[["OFFSET_W","Write proxy for field `OFFSET`"]],"type":[["OFFSET_R","Reader of field `OFFSET`"],["R","Reader of register FMA"],["W","Writer for register FMA"]]});

@@ -1,0 +1,1 @@
+initSidebarItems({"type":[["NOPERM_R","Reader of field `NOPERM`"],["R","Reader of register EEDONE"],["WKCOPY_R","Reader of field `WKCOPY`"],["WKERASE_R","Reader of field `WKERASE`"],["WORKING_R","Reader of field `WORKING`"],["WRBUSY_R","Reader of field `WRBUSY`"]]});

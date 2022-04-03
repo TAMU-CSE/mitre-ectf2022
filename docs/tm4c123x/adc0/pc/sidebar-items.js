@@ -1,0 +1,1 @@
+initSidebarItems({"enum":[["SR_A","ADC Sample Rate"]],"struct":[["SR_W","Write proxy for field `SR`"]],"type":[["R","Reader of register PC"],["SR_R","Reader of field `SR`"],["W","Writer for register PC"]]});

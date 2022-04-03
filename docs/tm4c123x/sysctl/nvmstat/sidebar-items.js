@@ -1,0 +1,1 @@
+initSidebarItems({"type":[["FWB_R","Reader of field `FWB`"],["R","Reader of register NVMSTAT"]]});

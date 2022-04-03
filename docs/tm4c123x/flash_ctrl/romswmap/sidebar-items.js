@@ -1,0 +1,1 @@
+initSidebarItems({"type":[["R","Reader of register ROMSWMAP"],["SAFERTOS_R","Reader of field `SAFERTOS`"]]});

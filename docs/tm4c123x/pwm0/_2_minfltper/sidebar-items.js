@@ -1,0 +1,1 @@
+initSidebarItems({"struct":[["MFP_W","Write proxy for field `MFP`"]],"type":[["MFP_R","Reader of field `MFP`"],["R","Reader of register _2_MINFLTPER"],["W","Writer for register _2_MINFLTPER"]]});

@@ -1,0 +1,1 @@
+initSidebarItems({"enum":[["SPEED_A","Operating Speed"]],"struct":[["SPEED_W","Write proxy for field `SPEED`"]],"type":[["R","Reader of register TYPE0"],["SPEED_R","Reader of field `SPEED`"],["W","Writer for register TYPE0"]]});

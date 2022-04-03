@@ -1,0 +1,1 @@
+initSidebarItems({"struct":[["ADDR_W","Write proxy for field `ADDR`"],["_9BITEN_W","Write proxy for field `_9BITEN`"]],"type":[["ADDR_R","Reader of field `ADDR`"],["R","Reader of register _9BITADDR"],["W","Writer for register _9BITADDR"],["_9BITEN_R","Reader of field `_9BITEN`"]]});

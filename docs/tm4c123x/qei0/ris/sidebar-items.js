@@ -1,0 +1,1 @@
+initSidebarItems({"type":[["DIR_R","Reader of field `DIR`"],["ERROR_R","Reader of field `ERROR`"],["INDEX_R","Reader of field `INDEX`"],["R","Reader of register RIS"],["TIMER_R","Reader of field `TIMER`"]]});

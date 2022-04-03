@@ -1,0 +1,1 @@
+initSidebarItems({"struct":[["FALLDELAY_W","Write proxy for field `FALLDELAY`"]],"type":[["FALLDELAY_R","Reader of field `FALLDELAY`"],["R","Reader of register _2_DBFALL"],["W","Writer for register _2_DBFALL"]]});

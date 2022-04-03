@@ -1,0 +1,68 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="generator" content="rustdoc"><meta name="description" content="The SAFFRIIR System"><meta name="keywords" content="rust, rustlang, rust-lang, riir_bootloader"><title>riir_bootloader - Rust</title><link rel="preload" as="font" type="font/woff2" crossorigin href="../SourceSerif4-Regular.ttf.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../FiraSans-Regular.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../FiraSans-Medium.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../SourceCodePro-Regular.ttf.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../SourceSerif4-Bold.ttf.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../SourceCodePro-Semibold.ttf.woff2"><link rel="stylesheet" type="text/css" href="../normalize.css"><link rel="stylesheet" type="text/css" href="../rustdoc.css" id="mainThemeStyle"><link rel="stylesheet" type="text/css" href="../ayu.css" disabled><link rel="stylesheet" type="text/css" href="../dark.css" disabled><link rel="stylesheet" type="text/css" href="../light.css" id="themeStyle"><script id="default-settings" ></script><script src="../storage.js"></script><script src="../crates.js"></script><script defer src="../main.js"></script>
+    <noscript><link rel="stylesheet" href="../noscript.css"></noscript><link rel="alternate icon" type="image/png" href="../favicon-16x16.png"><link rel="alternate icon" type="image/png" href="../favicon-32x32.png"><link rel="icon" type="image/svg+xml" href="../favicon.svg"></head><body class="rustdoc mod crate"><!--[if lte IE 11]><div class="warning">This old browser is unsupported and will most likely display funky things.</div><![endif]--><nav class="mobile-topbar"><button class="sidebar-menu-toggle">&#9776;</button><a class="sidebar-logo" href="../riir_bootloader/index.html"><div class="logo-container"><img class="rust-logo" src="../rust-logo.svg" alt="logo"></div>
+        </a><h2 class="location"></h2>
+    </nav>
+    <nav class="sidebar"><a class="sidebar-logo" href="../riir_bootloader/index.html"><div class="logo-container"><img class="rust-logo" src="../rust-logo.svg" alt="logo"></div>
+        </a><h2 class="location"><a href="#">Crate riir_bootloader</a></h2><div class="sidebar-elems"><div class="block"><ul><li class="version">Version 0.1.0</li><li><a id="all-types" href="all.html">All Items</a></li></div></ul><section><div class="block"><ul><li><a href="#modules">Modules</a></li><li><a href="#functions">Functions</a></li></ul></div></section><div id="sidebar-vars" data-name="riir_bootloader" data-ty="mod" data-relpath=""></div><script defer src="sidebar-items.js"></script></div></nav><main><div class="width-limiter"><div class="sub-container"><a class="sub-logo-container" href="../riir_bootloader/index.html"><img class="rust-logo" src="../rust-logo.svg" alt="logo"></a><nav class="sub"><div class="theme-picker hidden"><button id="theme-picker" aria-label="Pick another theme!" aria-haspopup="menu" title="themes"><img width="22" height="22" alt="Pick another theme!" src="../brush.svg"></button><div id="theme-choices" role="menu"></div></div><form class="search-form"><div class="search-container"><span></span><input class="search-input" name="search" autocomplete="off" spellcheck="false" placeholder="Click or press ‘S’ to search, ‘?’ for more options…" type="search"><button type="button" id="help-button" title="help">?</button><a id="settings-menu" href="../settings.html" title="settings"><img width="22" height="22" alt="Change settings" src="../wheel.svg"></a></div></form></nav></div><section id="main-content" class="content"><div class="main-heading">
+    <h1 class="fqn"><span class="in-band">Crate <a class="mod" href="#">riir_bootloader</a><button id="copy-path" onclick="copy_path(this)" title="Copy item path to clipboard"><img src="../clipboard.svg" width="19" height="18" alt="Copy item path"></button></span></h1><span class="out-of-band"><a class="srclink" href="../src/riir_bootloader/lib.rs.html#1-107">source</a> · <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">[<span class="inner">&#x2212;</span>]</a></span></div><details class="rustdoc-toggle top-doc" open><summary class="hideme"><span>Expand description</span></summary><div class="docblock"><h2 id="the-saffriir-system"><a href="#the-saffriir-system">The SAFFRIIR System</a></h2>
+<blockquote>
+<p><em>SAFFIRe but it’s rewritten in Rust™</em></p>
+</blockquote>
+<p>This is TAMU’s submission for MITRE’s 2022 Embedded System CTF (eCTF)!</p>
+<h3 id="building"><a href="#building">Building</a></h3>
+<p>We <strong>strongly</strong> recommend you build with the provided <a href="../../dockerfiles/1_build_saffire.Dockerfile">Docker image</a>, following the <a href="https://github.tamu.edu/mitre-ectf-2022/2022-ectf-insecure-example/blob/master/getting_started.md">instructions</a> provided by MITRE’s <a href="https://github.tamu.edu/mitre-ectf-2022/2022-ectf-insecure-example">reference implementation</a>.</p>
+<h3 id="project-layout"><a href="#project-layout">Project Layout</a></h3>
+<p>The SAFFRIIR system is split into 3 main crates:</p>
+<ul>
+<li><a href="../bootloader/index.html"><code>riir_host_tools</code></a>: Rust implementation of the host-tools.</li>
+<li><a href="../riir_host_tools/index.html"><code>riir_bootloader</code></a>: Rust implementation of the bootloader (you’re already here).
+The entry point is in the <a href="../bootloader/index.html"><code>bootloader</code></a> crate.</li>
+<li><a href="../gen_eeprom/index.html"><code>gen_eeprom</code></a>: Rust tooling to generate an EEPROM image with pre-initialized secrets.</li>
+</ul>
+<h3 id="design"><a href="#design">Design</a></h3>
+<p>While the core functionality remains the same as the reference implementation, there are
+two key differences:</p>
+<ul>
+<li>It’s written in Rust!</li>
+<li>It’s (hopefully) secure!</li>
+</ul>
+<p>We chose to implement our design in Rust due to its core tenants of memory safety, performance,
+and developer ergonomics. To remove dependencies on C code, we ported over the necessary
+functionality from the provided TivaWare library, using the TM4C123GH6PM data sheet as a
+reference.</p>
+<p>To harden the SAFFRIIR system’s security, we implement the following tactics: </p>
+<h4 id="confidentiality"><a href="#confidentiality">Confidentiality</a></h4>
+<ul>
+<li>Packages are transmitted and stored encrypted via <a href="../crypto_secretstream/index.html" title="crypto_secretstream"><code>crypto_secretstream</code></a>.</li>
+<li>Secrets in EEPROM are stored encrypted via <a href="../chacha20poly1305/index.html" title="chacha20poly1305"><code>chacha20poly1305</code></a>.</li>
+<li>We chose ChaCha20Poly1305 over other encryption schemes due to its built-in integrity
+checking via <a href="https://en.wikipedia.org/wiki/Authenticated_encryption">AEAD</a> and less prolific
+literature on power analysis attacks (compared to <a href="https://en.wikipedia.org/wiki/Advanced_Encryption_Standard">AES</a>).</li>
+</ul>
+<h4 id="integrity"><a href="#integrity">Integrity</a></h4>
+<ul>
+<li>To mitigate the flash trojan, the bootloader primarily runs in SRAM. A further discussion
+can be found in the documentation of the <a href="../bootloader/index.html"><code>bootloader</code></a> crate.</li>
+<li>Any flash writes are immediately followed by verification checks to ensure the <code>.text</code>
+section is not maliciously modified.</li>
+<li>Random jitter in execution delay is applied before critical checks to mitigate fault injection.</li>
+</ul>
+<h4 id="authenticity"><a href="#authenticity">Authenticity</a></h4>
+<ul>
+<li>Every host-tool that issues a bootloader command must authenticate itself before the
+bootloader proceeds with command execution. Signature production and verification is provided
+by the <a href="../p256/index.html" title="p256"><code>p256</code></a> crate.</li>
+<li>All received packages contain signed hashes, which are verified against hardcoded public keys in
+EEPROM.</li>
+</ul>
+</div></details><h2 id="modules" class="small-section-header"><a href="#modules">Modules</a></h2>
+<div class="item-table"><div class="item-row"><div class="item-left module-item"><a class="mod" href="crypto/index.html" title="riir_bootloader::crypto mod">crypto</a></div><div class="item-right docblock-short"><p>Contains various utilities for preserving confidentiality and integrity of bootloader data.</p>
+</div></div><div class="item-row"><div class="item-left module-item"><a class="mod" href="error/index.html" title="riir_bootloader::error mod">error</a></div><div class="item-right docblock-short"><p>Error handling.</p>
+</div></div><div class="item-row"><div class="item-left module-item"><a class="mod" href="handlers/index.html" title="riir_bootloader::handlers mod">handlers</a></div><div class="item-right docblock-short"><p>Routines for handling commands sent from host-tools.</p>
+</div></div><div class="item-row"><div class="item-left module-item"><a class="mod" href="package/index.html" title="riir_bootloader::package mod">package</a></div><div class="item-right docblock-short"><p>Utilities and types for securely receiving packages.</p>
+</div></div><div class="item-row"><div class="item-left module-item"><a class="mod" href="peripherals/index.html" title="riir_bootloader::peripherals mod">peripherals</a></div><div class="item-right docblock-short"><p>High-level abstractions over the TM4C123G’s memory-mapped peripherals.</p>
+</div></div></div><h2 id="functions" class="small-section-header"><a href="#functions">Functions</a></h2>
+<div class="item-table"><div class="item-row"><div class="item-left module-item"><a class="fn" href="fn.verify_stage1.html" title="riir_bootloader::verify_stage1 fn">verify_stage1</a></div><div class="item-right docblock-short"><p>Computes the <a href="../blake2/type.Blake2s256.html"><code>Blake2s256</code></a> hash of the <code>.text</code> section, then compares it against the hash
+stored in EEPROM. If the hashes mismatch, then the bootloader is deemed inoperable, so the second stage decryption key is zeroed to prevent further execution on subsequent power cycles.</p>
+</div></div></div></section><section id="search" class="content hidden"></section></div></main><div id="rustdoc-vars" data-root-path="../" data-current-crate="riir_bootloader" data-themes="ayu,dark,light" data-resource-suffix="" data-rustdoc-version="1.61.0-nightly (c84f39e6c 2022-03-20)" ></div>
+</body></html>

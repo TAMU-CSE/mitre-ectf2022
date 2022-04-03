@@ -1,0 +1,1 @@
+initSidebarItems({"type":[["R","Reader of register AFSEL"],["W","Writer for register AFSEL"]]});

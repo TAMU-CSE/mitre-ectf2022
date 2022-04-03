@@ -1,0 +1,1 @@
+initSidebarItems({"type":[["R","Reader of register PRCAN"],["R0_R","Reader of field `R0`"],["R1_R","Reader of field `R1`"]]});

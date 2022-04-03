@@ -1,0 +1,1 @@
+initSidebarItems({"type":[["NEWDAT_R","Reader of field `NEWDAT`"],["R","Reader of register NWDA2"]]});

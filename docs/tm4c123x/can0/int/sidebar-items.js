@@ -1,0 +1,1 @@
+initSidebarItems({"enum":[["INTID_A","Interrupt Identifier"]],"type":[["INTID_R","Reader of field `INTID`"],["R","Reader of register INT"]]});

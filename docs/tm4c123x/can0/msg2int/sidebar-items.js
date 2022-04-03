@@ -1,0 +1,1 @@
+initSidebarItems({"type":[["INTPND_R","Reader of field `INTPND`"],["R","Reader of register MSG2INT"]]});

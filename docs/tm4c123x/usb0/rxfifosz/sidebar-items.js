@@ -1,0 +1,1 @@
+initSidebarItems({"enum":[["SIZE_A","Max Packet Size"]],"struct":[["DPB_W","Write proxy for field `DPB`"],["SIZE_W","Write proxy for field `SIZE`"]],"type":[["DPB_R","Reader of field `DPB`"],["R","Reader of register RXFIFOSZ"],["SIZE_R","Reader of field `SIZE`"],["W","Writer for register RXFIFOSZ"]]});

@@ -20,3 +20,5 @@ The example code is structured as follows
 * `tools/` - Miscellaneous tools to run and interract with SAFFIRe.
 * `saffire.cfg` - An example option config file for running SAFFIRe
 
+## Documentation
+Our design documentation is hosted live at https://tamu-cse.github.io/mitre-ectf2022, check it out!

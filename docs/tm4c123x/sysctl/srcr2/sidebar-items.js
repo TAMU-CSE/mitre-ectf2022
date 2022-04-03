@@ -1,0 +1,1 @@
+initSidebarItems({"type":[["GPIOA_R","Reader of field `GPIOA`"],["GPIOB_R","Reader of field `GPIOB`"],["GPIOC_R","Reader of field `GPIOC`"],["GPIOD_R","Reader of field `GPIOD`"],["GPIOE_R","Reader of field `GPIOE`"],["GPIOF_R","Reader of field `GPIOF`"],["R","Reader of register SRCR2"],["UDMA_R","Reader of field `UDMA`"],["USB0_R","Reader of field `USB0`"]]});

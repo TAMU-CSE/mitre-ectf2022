@@ -1,0 +1,1 @@
+initSidebarItems({"struct":[["TAPSRH_W","Write proxy for field `TAPSRH`"],["TAPSR_W","Write proxy for field `TAPSR`"]],"type":[["R","Reader of register TAPR"],["TAPSRH_R","Reader of field `TAPSRH`"],["TAPSR_R","Reader of field `TAPSR`"],["W","Writer for register TAPR"]]});

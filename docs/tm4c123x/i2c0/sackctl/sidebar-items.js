@@ -1,0 +1,1 @@
+initSidebarItems({"struct":[["ACKOEN_W","Write proxy for field `ACKOEN`"],["ACKOVAL_W","Write proxy for field `ACKOVAL`"]],"type":[["ACKOEN_R","Reader of field `ACKOEN`"],["ACKOVAL_R","Reader of field `ACKOVAL`"],["R","Reader of register SACKCTL"],["W","Writer for register SACKCTL"]]});

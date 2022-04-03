@@ -1,0 +1,1 @@
+initSidebarItems({"struct":[["DELAY_W","Write proxy for field `DELAY`"]],"type":[["DELAY_R","Reader of field `DELAY`"],["R","Reader of register _0_DBRISE"],["W","Writer for register _0_DBRISE"]]});

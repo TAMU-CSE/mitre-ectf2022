@@ -1,0 +1,1 @@
+initSidebarItems({"enum":[["TYPE_A","Controller Type"],["USB_A","USB Capability"]],"type":[["ECNT_R","Reader of field `ECNT`"],["PHY_R","Reader of field `PHY`"],["R","Reader of register PP"],["TYPE_R","Reader of field `TYPE`"],["USB_R","Reader of field `USB`"]]});

@@ -1,0 +1,1 @@
+initSidebarItems({"enum":[["CS_A","SSI Baud Clock Source"]],"struct":[["CS_W","Write proxy for field `CS`"]],"type":[["CS_R","Reader of field `CS`"],["R","Reader of register CC"],["W","Writer for register CC"]]});

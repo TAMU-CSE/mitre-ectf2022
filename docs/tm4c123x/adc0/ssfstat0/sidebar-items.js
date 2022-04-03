@@ -1,0 +1,1 @@
+initSidebarItems({"type":[["EMPTY_R","Reader of field `EMPTY`"],["FULL_R","Reader of field `FULL`"],["HPTR_R","Reader of field `HPTR`"],["R","Reader of register SSFSTAT0"],["TPTR_R","Reader of field `TPTR`"]]});

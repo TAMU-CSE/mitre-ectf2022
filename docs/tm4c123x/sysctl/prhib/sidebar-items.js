@@ -1,0 +1,1 @@
+initSidebarItems({"type":[["R","Reader of register PRHIB"],["R0_R","Reader of field `R0`"]]});

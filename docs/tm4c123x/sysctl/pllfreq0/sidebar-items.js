@@ -1,0 +1,1 @@
+initSidebarItems({"struct":[["MFRAC_W","Write proxy for field `MFRAC`"],["MINT_W","Write proxy for field `MINT`"]],"type":[["MFRAC_R","Reader of field `MFRAC`"],["MINT_R","Reader of field `MINT`"],["R","Reader of register PLLFREQ0"],["W","Writer for register PLLFREQ0"]]});

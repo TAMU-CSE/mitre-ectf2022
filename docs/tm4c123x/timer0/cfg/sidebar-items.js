@@ -1,0 +1,1 @@
+initSidebarItems({"enum":[["CFG_A","GPTM Configuration"]],"struct":[["CFG_W","Write proxy for field `CFG`"]],"type":[["CFG_R","Reader of field `CFG`"],["R","Reader of register CFG"],["W","Writer for register CFG"]]});

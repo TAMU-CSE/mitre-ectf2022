@@ -1,0 +1,3 @@
+(function() {var implementors = {};
+implementors["riir_bootloader"] = [{"text":"impl <a class=\"trait\" href=\"num_enum/trait.TryFromPrimitive.html\" title=\"trait num_enum::TryFromPrimitive\">TryFromPrimitive</a> for <a class=\"enum\" href=\"riir_bootloader/error/enum.Error.html\" title=\"enum riir_bootloader::error::Error\">Error</a>","synthetic":false,"types":["riir_bootloader::error::Error"]}];
+if (window.register_implementors) {window.register_implementors(implementors);} else {window.pending_implementors = implementors;}})()

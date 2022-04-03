@@ -1,0 +1,1 @@
+initSidebarItems({"type":[["R","Reader of register TAV"],["W","Writer for register TAV"]]});

@@ -1,0 +1,1 @@
+initSidebarItems({"struct":[["OAR2EN_W","Write proxy for field `OAR2EN`"],["OAR2_W","Write proxy for field `OAR2`"]],"type":[["OAR2EN_R","Reader of field `OAR2EN`"],["OAR2_R","Reader of field `OAR2`"],["R","Reader of register SOAR2"],["W","Writer for register SOAR2"]]});

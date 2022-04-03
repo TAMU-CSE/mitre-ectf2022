@@ -1,0 +1,1 @@
+initSidebarItems({"struct":[["FIFOACC_W","Write proxy for field `FIFOACC`"],["FORCEFS_W","Write proxy for field `FORCEFS`"],["FORCEH_W","Write proxy for field `FORCEH`"]],"type":[["FIFOACC_R","Reader of field `FIFOACC`"],["FORCEFS_R","Reader of field `FORCEFS`"],["FORCEH_R","Reader of field `FORCEH`"],["R","Reader of register TEST"],["W","Writer for register TEST"]]});

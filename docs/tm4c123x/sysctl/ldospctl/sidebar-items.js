@@ -1,0 +1,1 @@
+initSidebarItems({"enum":[["VLDO_A","LDO Output Voltage"]],"struct":[["VADJEN_W","Write proxy for field `VADJEN`"],["VLDO_W","Write proxy for field `VLDO`"]],"type":[["R","Reader of register LDOSPCTL"],["VADJEN_R","Reader of field `VADJEN`"],["VLDO_R","Reader of field `VLDO`"],["W","Writer for register LDOSPCTL"]]});

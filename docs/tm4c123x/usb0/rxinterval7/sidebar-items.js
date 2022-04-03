@@ -1,0 +1,1 @@
+initSidebarItems({"struct":[["TXPOLL_W","Write proxy for field `TXPOLL`"]],"type":[["R","Reader of register RXINTERVAL7"],["TXPOLL_R","Reader of field `TXPOLL`"],["W","Writer for register RXINTERVAL7"]]});

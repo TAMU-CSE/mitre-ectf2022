@@ -1,0 +1,1 @@
+initSidebarItems({"type":[["R","Reader of register PRSSI"],["R0_R","Reader of field `R0`"],["R1_R","Reader of field `R1`"],["R2_R","Reader of field `R2`"],["R3_R","Reader of field `R3`"]]});

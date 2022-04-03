@@ -1,0 +1,1 @@
+initSidebarItems({"struct":[["GpioControl","Provides mutual-exclusion for certain GPIO operations (such as selecting an alternate mode) that can’t be done atomically."],["PC0","Pin"],["PC1","Pin"],["PC2","Pin"],["PC3","Pin"],["PC4","Pin"],["PC5","Pin"],["PC6","Pin"],["PC7","Pin"],["PCx","Partially erased pin"],["Parts","GPIO parts"]]});

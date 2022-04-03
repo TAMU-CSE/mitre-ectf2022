@@ -1,0 +1,1 @@
+initSidebarItems({"constant":[["FRAME_BAD","Magic byte indicating failure."],["FRAME_OK","Magic byte indicating success."]],"struct":[["Uart","High-level interface for reading and writing to UART0."]]});

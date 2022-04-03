@@ -9,34 +9,54 @@
 # 2022 MITRE eCTF competition, and may not meet MITRE standards for quality.
 # Use this code at your own risk!
 
+FROM rustlang/rust:nightly-buster-slim as base
+RUN apt-get update && \
+    apt-get upgrade -y && \
+    apt-get install -y gcc-aarch64-linux-gnu
+RUN rustup target add thumbv7em-none-eabihf
+RUN rustup component add llvm-tools-preview
+RUN rustup component add rust-src
+RUN cargo install cargo-binutils
+
+# Build host tools
+FROM base as build-host-tools
+COPY riir_host_tools /host_tools
+WORKDIR /host_tools
+RUN cargo clean && rm -f Cargo.lock
+RUN cargo build --features production,emulator --release
+
+# Build bootloader
+FROM base as build-bootloader
+COPY --from=build-host-tools /secrets /secrets
+COPY riir_bootloader /riir_bootloader
+WORKDIR /riir_bootloader
+RUN cargo clean && rm -f Cargo.lock
+
+ARG BOOT_PATH="/riir_bootloader/target/thumbv7em-none-eabi/release"
+ARG OLDEST_VERSION="1"
+
+RUN cargo objcopy --bin bootloader --release --features production -- -O binary unencrypted_bootloader.bin
+RUN mv $BOOT_PATH/bootloader /riir_bootloader/bootloader.elf
+
+# Encrypt bootloader
+COPY gen_eeprom /gen_eeprom
+WORKDIR /gen_eeprom
+RUN cargo clean && rm -f Cargo.lock
+RUN OLDEST_VERSION=$OLDEST_VERSION cargo run --release
+RUN dd if=/riir_bootloader/encrypted_bootloader.bin of=/riir_bootloader/bootloader.bin ibs=22528 skip=1
+
+# Final image
 FROM ubuntu:focal
+RUN apt-get update && apt-get upgrade -y && apt-get install -y python3
 
-# Add environment customizations here
-# NOTE: do this first so Docker can used cached containers to skip reinstalling everything
-RUN apt-get update && apt-get upgrade -y && \
-    apt-get install -y python3 \
-    binutils-arm-none-eabi gcc-arm-none-eabi make
-
-# Create bootloader binary folder
+# Create system folders
 RUN mkdir /bootloader
+RUN mkdir /host_tools
+COPY --from=build-host-tools /secrets /secrets
 
-# Add any system-wide secrets here
-RUN mkdir /secrets
+ARG HOST_PATH="/host_tools/target/release"
 
-# Add host tools and bootloader source to container
-ADD host_tools/ /host_tools
-ADD bootloader /bl_build
-
-# Generate Secrets
-RUN sh /host_tools/generate_secrets
-
-# Create EEPROM contents
-RUN echo "Bootloader Data" > /bootloader/eeprom.bin
-
-# Compile bootloader
-WORKDIR /bl_build
-
-ARG OLDEST_VERSION
-RUN make OLDEST_VERSION=${OLDEST_VERSION}
-RUN mv /bl_build/gcc/bootloader.bin /bootloader/bootloader.bin
-RUN mv /bl_build/gcc/bootloader.axf /bootloader/bootloader.elf
+# Add binaries
+COPY --from=build-host-tools $HOST_PATH/boot $HOST_PATH/cfg_load $HOST_PATH/cfg_protect $HOST_PATH/fw_protect $HOST_PATH/fw_update $HOST_PATH/readback /host_tools/
+COPY host_tools/monitor host_tools/__init__.py host_tools/util.py /host_tools/
+COPY --from=build-bootloader /riir_bootloader/bootloader.elf /riir_bootloader/bootloader.bin /riir_bootloader/eeprom.bin /bootloader/

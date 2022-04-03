@@ -1,0 +1,1 @@
+initSidebarItems({"type":[["R","Reader of register PCTL"],["W","Writer for register PCTL"]]});

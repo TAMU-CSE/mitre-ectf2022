@@ -1,0 +1,1 @@
+initSidebarItems({"type":[["FAULT0_R","Reader of field `FAULT0`"],["FAULT1_R","Reader of field `FAULT1`"],["R","Reader of register STATUS"]]});

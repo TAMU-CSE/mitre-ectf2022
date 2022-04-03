@@ -1,0 +1,1 @@
+initSidebarItems({"struct":[["RESUME_W","Write proxy for field `RESUME`"]],"type":[["W","Writer for register DRISC"]]});

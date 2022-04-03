@@ -1,0 +1,1 @@
+initSidebarItems({"struct":[["MUX0_W","Write proxy for field `MUX0`"]],"type":[["MUX0_R","Reader of field `MUX0`"],["R","Reader of register SSMUX3"],["W","Writer for register SSMUX3"]]});

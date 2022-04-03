@@ -1,0 +1,1 @@
+initSidebarItems({"type":[["R","Reader of register MIS"],["WDTMIS_R","Reader of field `WDTMIS`"]]});

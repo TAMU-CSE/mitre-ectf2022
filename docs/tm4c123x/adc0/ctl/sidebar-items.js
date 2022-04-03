@@ -1,0 +1,1 @@
+initSidebarItems({"enum":[["VREF_A","Voltage Reference Select"]],"struct":[["VREF_W","Write proxy for field `VREF`"]],"type":[["R","Reader of register CTL"],["VREF_R","Reader of field `VREF`"],["W","Writer for register CTL"]]});

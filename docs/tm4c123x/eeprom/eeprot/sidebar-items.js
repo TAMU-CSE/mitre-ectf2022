@@ -1,0 +1,1 @@
+initSidebarItems({"enum":[["PROT_A","Protection Control"]],"struct":[["ACC_W","Write proxy for field `ACC`"],["PROT_W","Write proxy for field `PROT`"]],"type":[["ACC_R","Reader of field `ACC`"],["PROT_R","Reader of field `PROT`"],["R","Reader of register EEPROT"],["W","Writer for register EEPROT"]]});

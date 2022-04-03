@@ -1,0 +1,1 @@
+initSidebarItems({"type":[["R","Reader of register RQPKTCOUNT1"],["W","Writer for register RQPKTCOUNT1"]]});

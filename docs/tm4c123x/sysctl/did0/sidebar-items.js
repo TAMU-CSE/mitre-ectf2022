@@ -1,0 +1,1 @@
+initSidebarItems({"enum":[["CLASS_A","Device Class"],["MAJ_A","Major Revision"],["MIN_A","Minor Revision"],["VER_A","DID0 Version"]],"type":[["CLASS_R","Reader of field `CLASS`"],["MAJ_R","Reader of field `MAJ`"],["MIN_R","Reader of field `MIN`"],["R","Reader of register DID0"],["VER_R","Reader of field `VER`"]]});

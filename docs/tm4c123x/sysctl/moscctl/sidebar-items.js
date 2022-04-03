@@ -1,0 +1,1 @@
+initSidebarItems({"struct":[["CVAL_W","Write proxy for field `CVAL`"],["MOSCIM_W","Write proxy for field `MOSCIM`"],["NOXTAL_W","Write proxy for field `NOXTAL`"]],"type":[["CVAL_R","Reader of field `CVAL`"],["MOSCIM_R","Reader of field `MOSCIM`"],["NOXTAL_R","Reader of field `NOXTAL`"],["R","Reader of register MOSCCTL"],["W","Writer for register MOSCCTL"]]});

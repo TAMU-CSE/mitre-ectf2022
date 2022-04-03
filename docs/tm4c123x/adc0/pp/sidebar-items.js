@@ -1,0 +1,1 @@
+initSidebarItems({"enum":[["MSR_A","Maximum ADC Sample Rate"],["TYPE_A","ADC Architecture"]],"type":[["CH_R","Reader of field `CH`"],["DC_R","Reader of field `DC`"],["MSR_R","Reader of field `MSR`"],["R","Reader of register PP"],["RSL_R","Reader of field `RSL`"],["TS_R","Reader of field `TS`"],["TYPE_R","Reader of field `TYPE`"]]});
