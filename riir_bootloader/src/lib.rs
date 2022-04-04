@@ -6,7 +6,7 @@
 //!
 //! ## Building
 //!
-//! We **strongly** recommend you build with the provided [Docker image](../../dockerfiles/1_build_saffire.Dockerfile), following the [instructions](https://github.tamu.edu/mitre-ectf-2022/2022-ectf-insecure-example/blob/master/getting_started.md) provided by MITRE's [reference implementation](https://github.tamu.edu/mitre-ectf-2022/2022-ectf-insecure-example).
+//! We **strongly** recommend you build with the provided [Docker image](https://github.com/TAMU-CSE/mitre-ectf2022/blob/main/dockerfiles/1_build_saffire.Dockerfile), following the [instructions](https://github.tamu.edu/mitre-ectf-2022/2022-ectf-insecure-example/blob/master/getting_started.md) provided by MITRE's [reference implementation](https://github.tamu.edu/mitre-ectf-2022/2022-ectf-insecure-example).
 //!
 //! ## Project Layout
 //! The SAFFRIIR system is split into 3 main crates:
@@ -47,9 +47,9 @@
 //! - All received packages contain signed hashes, which are verified against hardcoded public keys in
 //!   EEPROM.
 //! 
-//! [`riir_host_tools`]: ../bootloader/index.html
+//! [`riir_host_tools`]: ../riir_host_tools/index.html
 //! [`gen_eeprom`]: ../gen_eeprom/index.html
-//! [`riir_bootloader`]: ../riir_host_tools/index.html
+//! [`riir_bootloader`]: ../riir_bootloader/index.html
 //! [`bootloader`]: ../bootloader/index.html
 #![no_std]
 

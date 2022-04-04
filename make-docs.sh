@@ -20,4 +20,5 @@ cat <<EOF >> target/doc/index.html
 </head>
 EOF
 cp -r target/doc ../docs
+cd ..
 rm -rf workspace

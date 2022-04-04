@@ -15,7 +15,7 @@
 //!
 //! ## Stage 1
 //! The first stage is the initial entry point to the bootloader and is responsible for setting up
-//! the second stage See [`stage1`] for more.
+//! the second stage. See [`stage1`] for more.
 //!
 //! ## Stage 2
 //! The second stage contains the core logic for interacting with the host-tools. See [`stage2`]
