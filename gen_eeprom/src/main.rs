@@ -115,8 +115,8 @@ where
 fn main() -> Result<()> {
     color_eyre::install()?;
     let oldest_version = std::env::var("OLDEST_VERSION")?.parse::<u32>()?;
-    let offsets = Offsets::from_elf("/riir_bootloader/bootloader.elf")?;
-    let mut bootloader = std::fs::read("/riir_bootloader/unencrypted_bootloader.bin")?;
+    let offsets = Offsets::from_elf("/bootloader/bootloader.elf")?;
+    let mut bootloader = std::fs::read("/bootloader/unencrypted_bootloader.bin")?;
     let len = offsets.edata - offsets.sdata;
     let text = &bootloader[offsets.stext..offsets.etext];
     let text_hash = TextHash {
@@ -204,8 +204,8 @@ fn main() -> Result<()> {
     check_encrypted_sector(raw, &fw_flag, &eeprom_key).context("fw_flag")?;
     check_encrypted_sector(raw, &cfg_flag, &eeprom_key).context("cfg_flag")?;
 
-    std::fs::write("/riir_bootloader/encrypted_bootloader.bin", bootloader)?;
-    std::fs::write("/riir_bootloader/eeprom.bin", raw)?;
+    std::fs::write("/bootloader/encrypted_bootloader.bin", bootloader)?;
+    std::fs::write("/bootloader/eeprom.bin", raw)?;
     println!("Successfully generated EEPROM image and encrypted bootloader with version {oldest_version}!");
     Ok(())
 }

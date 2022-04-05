@@ -9,4 +9,4 @@ color-eyre = "0.6.1"
 crypto_secretstream = { git = "https://github.com/lhhaber/nacl-compat", default-features = false }
 goblin = { version = "0.5.1", default-features = false, features = ["std", "elf64", "elf32", "endian_fd"]}
 rand = "0.8.5"
-riir_bootloader = { path = "../riir_bootloader" }
+riir_bootloader = { path = "../bootloader" }

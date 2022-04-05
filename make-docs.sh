@@ -2,14 +2,14 @@
 rm -rf workspace
 mkdir workspace
 cp -r gen_eeprom workspace
-cp -r riir_bootloader workspace
-cp -r riir_host_tools workspace
+cp -r bootloader workspace
+cp -r host_tools workspace
 cat <<EOF >> workspace/Cargo.toml
 [workspace]
 members = [
     "gen_eeprom",
-    "riir_bootloader",
-    "riir_host_tools",
+    "bootloader",
+    "host_tools",
 ]
 EOF
 cd workspace
